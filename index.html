@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class='no-js'>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <title>It's happening.</title>
+        <meta name='description' content=''>
+        <meta name='viewport' content='width=device-width'>
+
+        <link rel='stylesheet' href='css/normalize.min.css'>
+        <link rel='stylesheet' href='css/main.css'>
+    </head>
+    <body>
+
+        <div id='templates' style='display:none'>
+            <div class='post' id='post-template'>
+                <div class='postInfo'>
+                    <span class='nameBlock'>
+                        <span class='name'></span>
+                        <span class='postertrip'></span>
+                    </span>
+                    <span class='dateTime'></span>
+                    <span class='postNum'></span>
+                </div>
+                <div class='file'>
+                    <div class='fileText'></div>
+                    <a class='fileThumb' href=''></a>
+                </div>
+                <blockquote class='postMessage'>
+                </blockquote>
+            </div>
+        </div>
+
+        <div id='svg-container' oncontextmenu='return false;'>
+            <svg id='svg'>
+                <defs>
+                    <marker id='arrow' viewBox='0 0 10 10' refX='22' refY='5' markerWidth='5' markerHeight='5' orient='auto'>
+                        <path d='M 0 0 L 10 5 L 0 10 z' fill='#333333'/>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+        
+        <script src='js/styles.js'></script>
+        <script src='js/vertex.js'></script>
+        <script src='js/graph.js'></script>
+        <script src='js/imageboard.js'></script>
+        <script src='js/force_direct.js'></script>
+        <script src='js/json.js'></script>
+        <script src='js/main.js'></script>
+    </body>
+</html>
